@@ -8,6 +8,7 @@ import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 
 import { LoginComponent } from "./login/login.component";
+import { SignUpComponent } from "./signup/signup.component";
 
 @NgModule({
     bootstrap: [
@@ -21,7 +22,8 @@ import { LoginComponent } from "./login/login.component";
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        LoginComponent
+        LoginComponent,
+        SignUpComponent
     ],
     providers: [
         ItemService
