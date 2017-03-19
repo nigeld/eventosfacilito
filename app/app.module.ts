@@ -8,8 +8,12 @@ import { ItemService } from "./item/item.service";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 
+import { HomeComponent } from "./home/home.component";
+
 import { LoginComponent } from "./login/login.component";
 import { SignUpComponent } from "./signup/signup.component";
+
+import { AuthGuard } from "./guards/auth.guard";
 
 @NgModule({
     bootstrap: [
@@ -25,10 +29,12 @@ import { SignUpComponent } from "./signup/signup.component";
         ItemsComponent,
         ItemDetailComponent,
         LoginComponent,
-        SignUpComponent
+        SignUpComponent,
+        HomeComponent
     ],
     providers: [
-        ItemService
+        ItemService,
+        AuthGuard
     ],
     schemas: [
         NO_ERRORS_SCHEMA
