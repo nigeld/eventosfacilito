@@ -8,10 +8,20 @@ import { Router } from "@angular/router";
 })
 
 export class SignUpComponent implements OnInit{
+    email : string;
+    password : string;
+    passwordConfirmation : string;
+    error : string;
     constructor(private router : Router) { }
 
     goToSignUp(){
         this.router.navigate(['login'])
+    }
+
+    signUp(){
+        console.log("Password : "+ this.password);
+        console.log("Password confirmation : "+ this.passwordConfirmation);
+        console.log("Email : "+ this.email);
     }
 
     ngOnInit(){
