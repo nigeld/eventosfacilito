@@ -1,5 +1,7 @@
 <ActionBar title="Registro de usuarios" class="action-bar bg-primary"></ActionBar>
 <FlexboxLayout flexDirection="column" class="registration-form" alignItems="center">
+    <Label [text]="error"></Label>
+
     <Label text="Email"></Label>
     <TextField hint="usuario@example.com" keyboardtype="email" [(ngModel)]="email" ></TextField>
 
