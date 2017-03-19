@@ -14,6 +14,7 @@ import { LoginComponent } from "./login/login.component";
 import { SignUpComponent } from "./signup/signup.component";
 
 import { AuthGuard } from "./guards/auth.guard";
+import { AuthService } from "./services/auth.service";
 
 @NgModule({
     bootstrap: [
@@ -34,7 +35,8 @@ import { AuthGuard } from "./guards/auth.guard";
     ],
     providers: [
         ItemService,
-        AuthGuard
+        AuthGuard,
+        AuthService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
