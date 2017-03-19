@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { getString, setString } from "application-settings";
+import { remove, getString, setString } from "application-settings";
 
 @Injectable()
 export class AuthService{
@@ -23,7 +23,11 @@ export class AuthService{
     }
 
     static set token(token : string){
-        setString("token", token);
+        if(token == null){
+            remove("token");
+        }else{
+            setString("token", token);
+        }
     }
 
 }

@@ -1,6 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
+import { AuthService} from "../services/auth.service";
+
+import firebase = require('nativescript-plugin-firebase');
+
 @Component({
     selector: "ns-home",
     moduleId: module.id,
@@ -12,6 +16,12 @@ export class HomeComponent implements OnInit {
 
     goToSignUp(){
         this.router.navigate(['signup'])
+    }
+
+    logOut() :void {
+        firebase.logout();
+        AuthService.token = null;
+        this.router.navigate(["/"]);
     }
 
     ngOnInit(): void {
