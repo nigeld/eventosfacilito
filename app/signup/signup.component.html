@@ -1,3 +1,14 @@
-<ns-signup>
-    
-</ns-signup>
+<ActionBar title="Registro de usuarios" class="action-bar bg-primary"></ActionBar>
+<FlexboxLayout flexDirection="column" class="registration-form" alignItems="center">
+    <Label text="Email"></Label>
+    <TextField hint="usuario@example.com" keyboardtype="email"></TextField>
+
+    <Label text="Contraseña"></Label>
+    <TextField hint="Al menos 6 caracteres" secure="true"></TextField>
+
+    <Label text="Confirmar contraseña"></Label>
+    <TextField hint="Al menos 6 caracteres" secure="true"></TextField>
+
+    <Button text="Crear cuenta" class="bg-primary"></Button>
+    <Button text="Ya tengo una cuenta" (tap)="goToLogin()" class="btn-flat"></Button>
+</FlexboxLayout>

@@ -1,10 +1,10 @@
-<ActionBar title="Registro de usuarios" class="action-bar bg-primary"></ActionBar>
-<FlexboxLayout flexDirection="column" class="login" alignItems="center" justifyContent="center" >
+<ActionBar title="Iniciar sesion" class="action-bar bg-primary"></ActionBar>
+<FlexboxLayout flexDirection="column" class="registration-form" alignItems="center">
     <Label text="Email"></Label>
-    <TextField></TextField>
+    <TextField hint="usuario@example.com" keyboardtype="email"></TextField>
 
     <Label text="Contraseña"></Label>
-    <TextField hint="Al menos 6 caracteres"></TextField>
+    <TextField hint="Al menos 6 caracteres" secure="true"></TextField>
 
     <Button text="Ingresar a tu cuenta" class="bg-primary"></Button>
     <Button text="Crea una cuenta" (tap)="goToSignUp()" class="btn-flat"></Button>
