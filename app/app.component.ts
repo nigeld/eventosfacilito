@@ -8,13 +8,13 @@ import { RadSideDrawerComponent, SideDrawerType } from 'nativescript-telerik-ui/
 export class AppComponent {
     @ViewChild(RadSideDrawerComponent) public drawerComponent : RadSideDrawerComponent;
 
-    private _drawer : SideDrawerType;
+    private drawer : SideDrawerType;
 
     ngAfterViewInit(){
-      this._drawer = this.drawerComponent.sideDrawer;
+      this.drawer = this.drawerComponent.sideDrawer;
     }
 
     openDrawer(){
-      this._drawer.toggleDrawerState();
+      this.drawer.toggleDrawerState();
     }
  }

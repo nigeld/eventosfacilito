@@ -1,6 +1,6 @@
 <ActionBar title="Ingresa" class="action-bar">
-    <ActionItem icon="res://ic_menu_whit" android:visibility="collapse" (tap)="openDrawer()"></ActionItem>
-    <NatigationButton icon="res://ic_menu_white_36db" ios:visibility="collapse" (tap)="openDrawer()"></NavigationButton>
+    <ActionItem icon="res://ic_menu_white" android:visibility="collapse" (tap)="openDrawer()"></ActionItem>
+    <NavigationButton icon="res://ic_menu_white_36dp" ios:visibility="collapse" (tap)="openDrawer()"></NavigationButton>
 </ActionBar>
 <StackLayout>
     <RadSideDrawer>
@@ -14,7 +14,6 @@
             <Label text="Cerrar sesión" class="sideLabel"></Label>
         </StackLayout>
         <StackLayout tkMainContent>
-            <Button text="Abrir menu" (tap)="openDrawer()" class="bg-primary"></Button>
             <page-router-outlet></page-router-outlet>
         </StackLayout>
     </RadSideDrawer>

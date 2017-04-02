@@ -1,6 +1,8 @@
-@import 'nativescript-theme-core/scss/light';
+@import 'nativescript-theme-core/scss/dark';
 
 @import 'nativescript-theme-core/scss/index';
+
+// Menu Lateral
 
 .sideStackLayout {
   background-color: white;
@@ -16,9 +18,14 @@
 
 
 
+// Botones
+
 .btn-flat {
     border-width: 1;
 }
+
+
+// Formularios
 
 .registration-form {
     padding: 1em;
