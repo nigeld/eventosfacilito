@@ -2,6 +2,20 @@
 
 @import 'nativescript-theme-core/scss/index';
 
+.sideStackLayout {
+  background-color: white;
+}
+
+.sideLabel {
+  padding: 10;
+}
+
+.sideLabelHeader {
+  background-color: #eee;
+}
+
+
+
 .btn-flat {
     border-width: 1;
 }

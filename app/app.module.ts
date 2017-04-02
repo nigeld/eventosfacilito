@@ -16,6 +16,8 @@ import { SignUpComponent } from "./signup/signup.component";
 import { AuthGuard } from "./guards/auth.guard";
 import { AuthService } from "./services/auth.service";
 
+import { SIDEDRAWER_DIRECTIVES } from 'nativescript-telerik-ui/sidedrawer/angular'
+
 @NgModule({
     bootstrap: [
         AppComponent
@@ -31,7 +33,8 @@ import { AuthService } from "./services/auth.service";
         ItemDetailComponent,
         LoginComponent,
         SignUpComponent,
-        HomeComponent
+        HomeComponent,
+        SIDEDRAWER_DIRECTIVES
     ],
     providers: [
         ItemService,

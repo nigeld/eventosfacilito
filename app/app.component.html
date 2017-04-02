@@ -1,1 +1,16 @@
-<page-router-outlet></page-router-outlet>
+<StackLayout>
+    <RadSideDrawer>
+        <StackLayout tkDrawerContent class="sideStackLayout">
+            <Label text="Eventos" class="sideLabel sideLabelHeader"></Label>
+            <Label text="Eventos generales" class="sideLabel"></Label>
+            <Label text="Eventos a asistir" class="sideLabel"></Label>
+            <Label text="Mis Eventos" class="sideLabel"></Label>
+            <Label text="Mi cuenta" class="sideLabel sideLabelHeader"></Label>
+            <Label text="Mi perfil" class="sideLabel"></Label>
+            <Label text="Cerrar sesión" class="sideLabel"></Label>
+        </StackLayout>
+        <StackLayout tkMainContent>
+            <page-router-outlet></page-router-outlet>
+        </StackLayout>
+    </RadSideDrawer>
+</StackLayout>
